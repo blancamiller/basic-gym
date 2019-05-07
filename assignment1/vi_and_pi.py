@@ -119,32 +119,7 @@ def policy_iteration(P, nS, nA, gamma=0.9, tol=10e-3):
 	############################
 	return value_function, policy
 
-def value_iteration(P, nS, nA, gamma=0.9, tol=1e-3):
-	"""
-	Learn value function and policy by using value iteration method for a given
-	gamma and environment.
-
-	Parameters:
-	----------
-	P, nS, nA, gamma:
-		defined at beginning of file
-	tol: float
-		Terminate value iteration when
-			max |value_function(s) - prev_value_function(s)| < tol
-	Returns:
-	----------
-	value_function: np.ndarray[nS]
-	policy: np.ndarray[nS]
-	"""
-
-	value_function = np.zeros(nS)
-	policy = np.zeros(nS, dtype=int)
-	############################
-	# YOUR IMPLEMENTATION HERE #
-
-
-	############################
-	return value_function, policy
+ 
 
 def render_single(env, policy, max_steps=100):
   """
