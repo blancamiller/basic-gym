@@ -143,8 +143,6 @@ def policy_iteration(P, nS, nA, gamma=0.9, tol=10e-3):
 
 	value_function = np.zeros(nS)
 	policy = np.zeros(nS, dtype=int)
-
-        print('TYPE: \n')
         
 	############################
 	# YOUR IMPLEMENTATION HERE #
@@ -156,7 +154,7 @@ def policy_iteration(P, nS, nA, gamma=0.9, tol=10e-3):
  
 
 def render_single(env, policy, max_steps=100):
-  """
+   """
     This function does not need to be modified
     Renders policy once on environment. Watch your agent play!
 
