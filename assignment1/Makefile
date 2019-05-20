@@ -1,5 +1,5 @@
-submit:
-	sh collect_submission.sh
+#submit:
+#sh collect_submission.sh
 
 clean:
 	rm -f assignment1.zip
